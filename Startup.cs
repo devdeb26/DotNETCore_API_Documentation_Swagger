@@ -9,6 +9,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.OpenApi.Models;
+using System.Reflection;
+using System.IO;
 
 namespace DotNETCore_API_Documentation_Swagger
 {
@@ -46,6 +48,10 @@ namespace DotNETCore_API_Documentation_Swagger
                     }
 
                 });
+
+                var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+                var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+                c.IncludeXmlComments(xmlPath);
 
             });
         }

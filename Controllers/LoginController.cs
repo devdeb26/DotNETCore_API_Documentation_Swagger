@@ -18,6 +18,11 @@ namespace DotNETCore_API_Documentation_Swagger.Controllers
             new UserModel(){Id = 3, UserName = "SampleUserName3", Password = "SamplePassword3"},
         };
 
+        /// <summary>
+        /// This is a sample XML Comment API Description
+        /// </summary>
+        /// <returns></returns>
+
         [HttpGet]
         [Route("GetUsers")]
         public IActionResult GetUsers()
