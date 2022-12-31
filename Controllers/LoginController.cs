@@ -19,6 +19,7 @@ namespace DotNETCore_API_Documentation_Swagger.Controllers
         };
 
         [HttpGet]
+        [Route("GetUsers")]
         public IActionResult GetUsers()
         {
             if (_oUsers.Count == 0)
@@ -28,7 +29,8 @@ namespace DotNETCore_API_Documentation_Swagger.Controllers
             return Ok(_oUsers);
         }
 
-        [HttpGet("{id}")]
+        [HttpGet]
+        [Route("GetUser/{id}")]
         public IActionResult GetUserById(int id)
         {
             var oUser = _oUsers.SingleOrDefault(c => c.Id == id);
@@ -40,6 +42,7 @@ namespace DotNETCore_API_Documentation_Swagger.Controllers
         }
 
         [HttpPost]
+        [Route("AddUser")]
         public IActionResult AddUsers(UserModel user)
         {
             _oUsers.Add(user);
@@ -51,6 +54,7 @@ namespace DotNETCore_API_Documentation_Swagger.Controllers
         }
 
         [HttpPut]
+        [Route("UpdateUser")]
         public IActionResult UpdateUser(UserModel user)
         {
             var a = _oUsers.Where(c => c.Id == user.Id).FirstOrDefault();
@@ -71,6 +75,7 @@ namespace DotNETCore_API_Documentation_Swagger.Controllers
 
 
         [HttpDelete]
+        [Route("DeleteUser")]
         public IActionResult DeleteUser(int Id)
         {
             var a = _oUsers.Where(c => c.Id == Id).SingleOrDefault();
