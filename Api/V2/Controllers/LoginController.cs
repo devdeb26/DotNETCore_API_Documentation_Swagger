@@ -5,11 +5,13 @@ using System.Linq;
 using System.Threading.Tasks;
 using DotNETCore_API_Documentation_Swagger.Model;
 
-namespace DotNETCore_API_Documentation_Swagger.Controllers
-{
-    [Route("api/[controller]")]
+namespace DotNETCore_API_Documentation_Swagger.Controllers.V2
+{   
     [ApiController]
-    public class LoginController : ControllerBase
+    [ApiVersion("2.0")]
+    [ApiExplorerSettings(GroupName ="V2")]
+    [Route("api/[controller]")]
+    public class LoginV2Controller : ControllerBase
     {
         List<UserModel> _oUsers = new List<UserModel>()
         { 
