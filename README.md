@@ -14,3 +14,6 @@ https://briancaos.wordpress.com/2022/10/14/c-net-swagger-api-versioning-show-ver
 ![image](https://user-images.githubusercontent.com/68544411/211291756-5ff9cb74-c8a6-4132-8a4c-977a2fd6ff53.png)
 ![image](https://user-images.githubusercontent.com/68544411/211291809-4fbf90c7-d697-42dc-b861-9658c22eb9bc.png)
 
+
+Si Lord lang malakas
+
