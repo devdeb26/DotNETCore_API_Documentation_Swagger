@@ -1,6 +1,10 @@
 # DotNETCore_API_Documentation_Swagger
 
-All Glory To God
+What is inside:
+ - Swagger + Basic API CRUD
+ - Add API Routing
+ - Integrate XML for API Description
+ - API Versioning
 
 References used:
 
